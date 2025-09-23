@@ -10,7 +10,7 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
 
   return (
     <div>
-      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20">
+      <div className="relative rounded-2xl border bg-white border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20">
         <div className="overflow-hidden rounded-t-2xl">
           <Link href={`/properties/${slug}`}>
             {mainImage && (

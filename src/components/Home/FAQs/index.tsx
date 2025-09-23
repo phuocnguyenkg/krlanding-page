@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
                     <div className='lg:mx-0 mx-auto'>
                         <Image
                             src="/images/faqs/faq-image.png"
-                            alt='image'
+                            alt='hình ảnh'
                             width={680}
                             height={644}
                             className='lg:w-full'
@@ -25,32 +25,32 @@ const FAQ: React.FC = () => {
                     <div className='lg:px-12'>
                         <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
                             <Icon icon="ph:house-simple-fill" className="text-2xl text-primary " />
-                            FAQs
+                            Câu hỏi thường gặp
                         </p>
                         <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white'>
-                            Everything about Homely homes
+                            Mọi thứ về ngôi nhà Homely
                         </h2>
                         <p className='text-dark/50 dark:text-white/50 pr-20'>
-                            We know that buying, selling, or investing in real estate can be overwhelming. Here are some frequently asked questions to help guide you through the process
+                            Chúng tôi hiểu rằng việc mua, bán hoặc đầu tư bất động sản có thể rất phức tạp. Dưới đây là một số câu hỏi thường gặp để giúp bạn trong quá trình này
                         </p>
                         <div className="my-8">
                             <Accordion type="single" defaultValue="item-1" collapsible className="w-full flex flex-col gap-6">
                                 <AccordionItem value="item-1">
-                                    <AccordionTrigger>1. Can I personalize my homely home?</AccordionTrigger>
+                                    <AccordionTrigger>1. Tôi có thể cá nhân hóa ngôi nhà Homely của mình không?</AccordionTrigger>
                                     <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
+                                        Khám phá đa dạng các bất động sản cao cấp, từ căn hộ sang trọng đến biệt thự rộng rãi, được thiết kế phù hợp với nhu cầu của bạn.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-2">
-                                    <AccordionTrigger>2. Where can I find homely homes?</AccordionTrigger>
+                                    <AccordionTrigger>2. Tôi có thể tìm ngôi nhà Homely ở đâu?</AccordionTrigger>
                                     <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
+                                        Khám phá đa dạng các bất động sản cao cấp, từ căn hộ sang trọng đến biệt thự rộng rãi, được thiết kế phù hợp với nhu cầu của bạn.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-3">
-                                    <AccordionTrigger>3. What steps to buy a homely?</AccordionTrigger>
+                                    <AccordionTrigger>3. Các bước để mua một ngôi nhà Homely là gì?</AccordionTrigger>
                                     <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
+                                        Khám phá đa dạng các bất động sản cao cấp, từ căn hộ sang trọng đến biệt thự rộng rãi, được thiết kế phù hợp với nhu cầu của bạn.
                                     </AccordionContent>
                                 </AccordionItem>
                             </Accordion>

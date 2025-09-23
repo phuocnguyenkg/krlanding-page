@@ -33,10 +33,9 @@ const FeaturedProperty: React.FC = () => {
     }
   };
 
-
   return (
     <section>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
+      <div className="container max-w-8xl mx-auto px-5 2xl:px-0 ">
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="relative">
             <Carousel
@@ -65,7 +64,9 @@ const FeaturedProperty: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => handleDotClick(index)}
-                  className={`w-2.5 h-2.5 rounded-full ${current === index + 1 ? "bg-white" : "bg-white/50"}`}
+                  className={`w-2.5 h-2.5 rounded-full ${
+                    current === index + 1 ? "bg-white" : "bg-white/50"
+                  }`}
                 />
               ))}
             </div>
@@ -73,121 +74,121 @@ const FeaturedProperty: React.FC = () => {
           <div className="flex flex-col gap-10">
             <div>
               <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
-                <Icon icon="ph:house-simple-fill" className="text-2xl text-primary " />
-                Featured property
+                <Icon
+                  icon="ph:house-simple-fill"
+                  className="text-2xl text-primary "
+                />
+                Vị trí
               </p>
               <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
-                Modern luxe villa
+                VỊ TRÍ DỰ ÁN
               </h2>
               <div className="flex items-center gap-2.5">
-                <Icon icon="ph:map-pin" width={28} height={26} className="text-dark/50 dark:text-white/50" />
+                <Icon
+                  icon="ph:map-pin"
+                  width={28}
+                  height={26}
+                  className="text-dark/50 dark:text-white/50"
+                />
                 <p className="text-dark/50 dark:text-white/50 text-base">
-                  20 S Aurora Ave, Miami
+                  Đà Nẵng, Việt Nam
                 </p>
               </div>
             </div>
-            <p className="text-base text-dark/50 dark:text-white/50">
-              Experience luxury living at modern luxe villa, located at 20 S Aurora Ave, Miami. Priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms,
-              3 bathrooms, and spacious living areas. Enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+
-              guests. Built in 2025.
+            <p className="text-gray-700 text-dark/50 dark:text-white/50">
+              Tọa lạc tại phường Hòa Hiệp Bắc, quận Liên Chiểu – vùng đất giao
+              hòa giữa thiên nhiên kỳ vĩ và bước chuyển mạnh mẽ của hạ tầng đô
+              thị, Vinhomes Hải Vân Bay nắm giữ vị thế đắc địa ngay chân đèo Hải
+              Vân – một trong những cung đường ven biển đẹp bậc nhất Việt Nam.
+              Với thế đất “tựa sơn, hướng thủy”, lưng tựa dãy Trường Sơn và mặt
+              hướng vịnh Đà Nẵng, dự án mở ra tầm nhìn khoáng đạt hiếm có, ôm
+              trọn cảnh quan biển trời hùng vĩ cùng chuỗi vịnh, bãi biển nguyên
+              sơ như Lăng Cô, Bãi Cả, Nam Chơn.
             </p>
             <div className="grid grid-cols-2 gap-10">
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
-                    src={'/images/hero/sofa.svg'}
-                    alt='sofa'
+                    src={"/images/hero/sofa.svg"}
+                    alt="sofa"
                     width={24}
                     height={24}
-                    className='block dark:hidden'
+                    className="block dark:hidden"
                     unoptimized={true}
                   />
                   <Image
-                    src={'/images/hero/dark-sofa.svg'}
-                    alt='sofa'
+                    src={"/images/hero/dark-sofa.svg"}
+                    alt="sofa"
                     width={24}
                     height={24}
-                    className='hidden dark:block'
+                    className="hidden dark:block"
                     unoptimized={true}
                   />
                 </div>
-                <h6 className="">4 Bedrooms</h6>
+                <h6 className="">Cách vị trị A</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
-                    src={'/images/hero/tube.svg'}
-                    alt='tube'
+                    src={"/images/hero/tube.svg"}
+                    alt="tube"
                     width={24}
                     height={24}
-                    className='block dark:hidden'
+                    className="block dark:hidden"
                     unoptimized={true}
                   />
                   <Image
-                    src={'/images/hero/dark-tube.svg'}
-                    alt='tube'
+                    src={"/images/hero/dark-tube.svg"}
+                    alt="tube"
                     width={24}
                     height={24}
-                    className='hidden dark:block'
+                    className="hidden dark:block"
                     unoptimized={true}
                   />
                 </div>
-                <h6 className="">3 Bathrooms</h6>
+                <h6 className="">Cách vị trị A</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
-                    src={'/images/hero/parking.svg'}
-                    alt='parking'
+                    src={"/images/hero/parking.svg"}
+                    alt="parking"
                     width={24}
                     height={24}
-                    className='block dark:hidden'
+                    className="block dark:hidden"
                     unoptimized={true}
                   />
                   <Image
-                    src={'/images/hero/dark-parking.svg'}
-                    alt='parking'
+                    src={"/images/hero/dark-parking.svg"}
+                    alt="parking"
                     width={24}
                     height={24}
-                    className='hidden dark:block'
+                    className="hidden dark:block"
                     unoptimized={true}
                   />
                 </div>
-                <h6 className="">Parking Space</h6>
+                <h6 className="">Cách vị trị A</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
-                    src={'/images/hero/bar.svg'}
-                    alt='bar'
+                    src={"/images/hero/bar.svg"}
+                    alt="bar"
                     width={24}
                     height={24}
-                    className='block dark:hidden'
+                    className="block dark:hidden"
                     unoptimized={true}
                   />
                   <Image
-                    src={'/images/hero/dark-bar.svg'}
-                    alt='bar'
+                    src={"/images/hero/dark-bar.svg"}
+                    alt="bar"
                     width={24}
                     height={24}
-                    className='hidden dark:block'
+                    className="hidden dark:block"
                     unoptimized={true}
                   />
                 </div>
-                <h6 className="">2 Bar areas</h6>
-              </div>
-            </div>
-            <div className="flex gap-10">
-              <Link href="/contactus" className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white">
-                Get in touch
-              </Link>
-              <div>
-                <h4 className="text-3xl text-dark dark:text-white font-medium">
-                  $1,650,500
-                </h4>
-                <p className="text-base text-dark/50">
-                  Discounted price
-                </p>
+                <h6 className="">Cách vị trị A</h6>
               </div>
             </div>
           </div>

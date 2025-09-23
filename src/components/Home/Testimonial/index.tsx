@@ -33,8 +33,14 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="bg-dark relative overflow-hidden" id="testimonial">
-      <div className="absolute right-0">
+    <section
+      className="bg-dark relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/nha_dau_tu.jpg')" }}
+      id="testimonial"
+    >
+      {/* Thêm overlay để đảm bảo text vẫn đọc được */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute right-0 z-10">
         <Image
           src="/images/testimonial/Vector.png"
           alt="victor"
@@ -43,17 +49,14 @@ const Testimonial = () => {
           unoptimized={true}
         />
       </div>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
+      <div className="container max-w-8xl mx-auto p-5 2xl:px-5 z-1 bg-gradient-to-r from-black via-white/20 via-white/10 to-transparent backdrop-blur-[1px] rounded-4xl shadow-md">
         <div>
           <p className="text-white text-base font-semibold flex gap-2">
-            <Icon
-              icon="ph:house-simple-fill"
-              className="text-2xl text-primary"
-            />
+            <Icon icon="ph:house-simple-fill" className="text-2xl text-white" />
             Nhà đầu tư
           </p>
           <h2 className="lg:text-52 text-40 font-medium text-white">
-            Chủ đầu tư ROX Signature
+            Chủ đầu tư Dự án
           </h2>
         </div>
         <div className="flex">
@@ -65,29 +68,29 @@ const Testimonial = () => {
               className="text-primary"
             />
             <div>
-              <h4 className="text-white lg:text-[20px] text-2xl">
-                Dự án The Legend Đà Nẵng được đầu tư bởi Công ty ROX Signature.
+              <h4 className=" lg:text-[20px] text-2xl text-white">
+                Dự án DOWNTOWN Đà Nẵng được đầu tư bởi Công ty ROX Signature.
                 Đây là một doanh nghiệp có tiềm lực tài chính vững mạnh và kinh
                 nghiệm trong lĩnh vực bất động sản.
               </h4>
               <p className="text-white mt-4">
-                Công ty ROX Signature:
+                Công ty DOWNTOWN:
                 <br />
                 <p className="text-white pl-4">
-                  • Là chủ đầu tư chính thức của dự án The Legend Đà Nẵng.
+                  • Là chủ đầu tư chính thức của dự án DOWNTOWN Đà Nẵng.
                 </p>
                 <p className="text-white pl-4">
                   • Công ty này có tiềm lực tài chính mạnh mẽ, đảm bảo cho việc
                   triển khai dự án một cách suôn sẻ và đúng tiến độ.
                 </p>
                 <p className="text-white pl-4">
-                  • Ngoài ra, Central trúng thầu dự án The Legend Đà Nẵng.
-                  Central là một nhà thầu xây dựng lớn và uy tín tại Việt Nam,
-                  đã có kinh nghiệm thi công nhiều dự án lớn và phức tạp.
+                  • Ngoài ra, Central trúng thầu dự án DOWNTOWN Đà Nẵng. Central
+                  là một nhà thầu xây dựng lớn và uy tín tại Việt Nam, đã có
+                  kinh nghiệm thi công nhiều dự án lớn và phức tạp.
                 </p>
                 <br />
                 Với sự kết hợp giữa tiềm lực tài chính của chủ đầu tư và uy tín
-                của đơn vị thi công, The Legend Đà Nẵng hứa hẹn sẽ là một dự án
+                của đơn vị thi công, DOWNTOWN Đà Nẵng hứa hẹn sẽ là một dự án
                 bất động sản chất lượng cao, mang đến cho khách hàng những trải
                 nghiệm sống đẳng cấp
               </p>

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="h-screen bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative">
         <div className="absolute w-full h-full -top-0 -right-0">
           <Image
-            src={"/images/hero/phoi-canh-du-an-the-legend-city-da-nang-3.jpg"}
+            src={"/images/hero/banner.jpg"}
             alt="heroImg"
             fill
             priority={false}
@@ -16,18 +16,22 @@ const Hero: React.FC = () => {
             className="object-cover w-full h-full"
           />
         </div>
+        {/* Overlay nhẹ để text nổi bật nhưng vẫn tươi sáng */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20 z-5"></div>
+        
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="relative text-white dark:text-dark text-center md:text-start z-10">
-            <p className="text-inherit text-xm font-medium">
+            <p className="text-inherit text-xm font-medium" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
               Tổ hợp căn hộ – khách sạn – trung tâm thương mại
             </p>
-            <h1 className="text-inherit text-6xl sm:text-9xl font-semibold -tracking-wider mt-4 mb-6">
-              The Legend Đà Nẵng
+            <h1 className="text-inherit text-6xl sm:text-9xl font-semibold -tracking-wider mt-4 mb-6" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.7)'}}>
+              Downtown Đà Nẵng
             </h1>
             <div className="flex flex-col xs:flex-row justify-center md:justify-start gap-4">
               <Link
                 href="/contactus"
-                className="flex items-center gap-2 px-8 py-3 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer"
+                className="flex items-center gap-2 px-8 py-3 border border-white dark:border-dark bg-white/20 backdrop-blur-sm text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer shadow-lg"
+                style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}
               >
                 <Icon icon={"ph:phone-bold"} width={24} height={24} />{" "}
                 +1-212-456-789
